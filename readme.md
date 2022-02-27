@@ -36,7 +36,7 @@ web应用程序：可以提供浏览器访问的程序；
   - jar包
   - 配置文件（Properties）
 
-web应用程序编写完毕后，若想提供给外界访问：需要一个服务器统一管理。
+**web应用程序编写完毕后，若想提供给外界访问：需要一个服务器统一管理。**
 
 ### 1.3 静态web
 
@@ -596,3 +596,499 @@ maven由于它的约定大于配置，我们之后可能遇到我们写的配置
 ![image-20220226000039631](D:\21.04.14\javaweb\readme.assets\image-20220226000039631.png)
 
 ![image-20220226000043214](D:\21.04.14\javaweb\readme.assets\image-20220226000043214.png)
+
+## 6、Servlet
+
+### 6.1 Servlet简介
+
+- Servlet就是sun公司开发动态web的一门技术
+- Sun在这些API中提供一个接口叫做：Servlet，如果你想开发一个Sevlet程序，只需要完成两个小步骤
+  - 编写一个类，实现Servlet接口
+  - 把开发好的java类部署到web服务器中
+
+**把实现了Servlet接口的java程序叫做，Servlet**
+
+### 6.2 HelloServlet
+
+Servlet接口在Sun公司有两个默认的实现类：HttpServlet，
+
+
+
+1. 构建一个普通的Maven项目，删掉里面的src目录，以后我们的学习就在这个项目里建立model；这个空的工程就是Maven主工程；
+
+2. 关于Maven父子工程的理解：
+
+   1. 父项目于中有：
+
+      ```xml
+          <modules>
+              <module>subservlet-01</module>
+          </modules>
+      ```
+
+      
+
+    2. 子项目中有：
+
+       ```xml
+          <parent>
+               <artifactId>javaweb-servlet-01</artifactId>
+               <groupId>com.lbgao</groupId>
+               <version>1.0-SNAPSHOT</version>
+           </parent>
+       ```
+
+   父项目中的java子项目可以直接使用
+
+3. Maven环境优化
+
+   - 修改web.xml
+   - 将maven的结构搭建完整
+
+4. 编写一个Servlet程序
+
+   1. 编写一个普通类
+   2. 实现Servlet接口，这里直接继承HttpServlet
+   3. ![image-20220226200447501](D:\21.04.14\javaweb\readme.assets\image-20220226200447501.png)
+
+5. 编写Servlet的映射
+
+   - 为什么需要映射？
+
+     **我们写的是java程序，但是要通过浏览器访问，而浏览器需要连接web服务器，所以我们需要在web服务器中注册我们写的Servlet，还需要给它一个浏览器能够访问的路径；**
+
+     ```xml
+     <!--    注册Servlet-->
+         <servlet>
+             <servlet-name>hello</servlet-name>
+             <servlet-class>com.lbgao.servlet.HelloServlet</servlet-class>
+         </servlet>
+     <!--    Servlet的请求路径-->
+         <servlet-mapping>
+             <servlet-name>hello</servlet-name>
+             <url-pattern>/hello</url-pattern>
+         </servlet-mapping>
+     ```
+
+     
+
+6. 配置Tomcat
+
+7. 启动测试
+
+### 6.3 Servlet原理
+
+Servlet是由Web服务器调用，web服务器在收到浏览器请求后，会：
+
+![image-20220226212457912](D:\21.04.14\javaweb\readme.assets\image-20220226212457912.png)
+
+### 6.4 Mapping问题
+
+1. 一个Servlet可以指定一个映射路径
+
+   ```xml
+   <servlet-mapping>
+           <servlet-name>hello</servlet-name>
+           <url-pattern>/hello</url-pattern>
+       </servlet-mapping>
+   ```
+
+2. 一个Servlet可以指定多个映射路径
+
+   ```xml
+   <servlet-mapping>
+           <servlet-name>hello</servlet-name>
+           <url-pattern>/hello1</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+           <servlet-name>hello</servlet-name>
+           <url-pattern>/hello2</url-pattern>
+       </servlet-mapping>
+   <servlet-mapping>
+           <servlet-name>hello</servlet-name>
+           <url-pattern>/hello3</url-pattern>
+   </servlet-mapping>
+   ```
+
+3. 一个Servlet可以指定通用映射路径
+
+   ```xml
+   <servlet-mapping>
+           <servlet-name>hello</servlet-name>
+           <url-pattern>/hello/*</url-pattern>
+   </servlet-mapping>
+   ```
+
+4. 指定一些后缀或者前缀等等...
+
+   ```xml
+   <!-- 可以自定义后缀实现请求路径
+    注意点： *前面不能加项目映射的路径 /hello/*.do
+   		-->
+   <servlet-mapping>
+           <servlet-name>hello</servlet-name>
+           <url-pattern>*.do</url-pattern> <!-- hello/dasdasd/djkasdjka.do -->
+   </servlet-mapping>
+   ```
+
+5. 默认请求路径
+
+   ```xml
+   <servlet-mapping>
+           <servlet-name>hello</servlet-name>
+           <url-pattern>/*</url-pattern>
+       </servlet-mapping> 
+   ```
+
+6. 优先级问题
+
+   **指定了固有的映射路径优先级最高，找不到就会走默认的处理。**
+
+### 6.5 ServletContext
+
+web容器在启动的时候，它会为每个web程序都创建一个对应的ServletContext对象，代表了当前的web应用；
+
+1. **共享数据**
+
+我在这个Servlet中保存的数据，可以在另外一个servlet中拿到；
+
+![image-20220226225908090](D:\21.04.14\javaweb\readme.assets\image-20220226225908090.png)	
+
+
+
+```java
+public class HelloServlet extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        PrintWriter writer = resp.getWriter();
+
+        writer.print("hello");
+
+        ServletContext cont = this.getServletContext();
+
+        String username = "lbgao";
+        cont.setAttribute("username",username);
+    }
+
+}
+
+
+
+public class GetServlet extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        ServletContext context = this.getServletContext();
+        String username = (String) context.getAttribute("username");
+        System.out.println(username);
+        resp.getWriter().print(username);
+    }
+}
+```
+
+2. **获取初始化参数**
+
+```xml
+<!--    配置一些web应用初始化参数-->
+    <context-param>
+        <param-name>url</param-name>
+        <param-value>jdbc:mysql://localhost:3306/mybatis</param-value>
+    </context-param>
+```
+
+```java
+public class ServletDemo03 extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        ServletContext context = this.getServletContext();
+
+        String url = context.getInitParameter("url");
+
+        resp.getWriter().print(url);
+        resp.getWriter().print(context.getContextPath());
+
+    }
+}
+```
+
+3. **请求转发**
+
+```java
+public class ServletDemo04 extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        ServletContext context = this.getServletContext();
+
+        RequestDispatcher dispatcher = context.getRequestDispatcher("/gp");//转发的请求路径
+        dispatcher.forward(req,resp);//调用forward实现转发请求
+
+    }
+}
+```
+
+![image-20220226231934460](D:\21.04.14\javaweb\readme.assets\image-20220226231934460.png)
+
+4. **读取资源文件**
+
+   Properties
+
+   - 在java目录下新建properties
+   - 在resources目录下新建properties
+
+   发现：都被打包到了同一个路劲下：classes，我们俗称这个路径为classpath
+
+   思路：需要一个文件流；
+
+   ```java
+   public class ServletDemo05 extends HttpServlet {
+       @Override
+       protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+           ServletContext context = this.getServletContext();
+   
+           InputStream stream = context.getResourceAsStream("/WEB-INF/classes/db.properties");
+   
+           Properties prop = new Properties();
+           prop.load(stream);
+           String username = prop.getProperty("username");
+           String pwd = prop.getProperty("password");
+   
+           resp.getWriter().print(username + pwd);
+   
+       }
+   }
+   ```
+
+   ```properties
+   username=root
+   password=12345
+   ```
+
+
+
+
+### 6.6 HttpServletResponse
+
+web服务器接收到客户端的http请求，针对这个请求分别创建一个代表请求的	HttpServletRequest对象，代表响应的一个HttpServletResponse；
+
+- 如果要获取客户端请求过来的参数：找HttpServletRequest
+- 如果要给客户端响应一些信息：找HttpServletResponse
+
+#### 1、简单分类
+
+**负责向浏览器发生数据的方法**
+
+```java
+ ServletOutputStream getOutputStream() throws IOException;
+ PrintWriter getWriter() throws IOException;
+```
+
+负责向浏览器发送响应头的方法
+
+```java
+ 	void setCharacterEncoding(String var1);
+
+    void setContentLength(int var1);
+
+    void setContentLengthLong(long var1);
+
+    void setContentType(String var1);
+
+    void setBufferSize(int var1);
+
+	void setHeader(String var1, String var2);
+
+    void addHeader(String var1, String var2);
+
+    void setIntHeader(String var1, int var2);
+
+    void addIntHeader(String var1, int var2);
+
+    void setStatus(int var1);
+```
+
+响应的状态码
+
+```java
+int SC_CONTINUE = 100;
+    int SC_SWITCHING_PROTOCOLS = 101;
+    int SC_OK = 200;
+    int SC_CREATED = 201;
+    int SC_ACCEPTED = 202;
+    int SC_NON_AUTHORITATIVE_INFORMATION = 203;
+    int SC_NO_CONTENT = 204;
+    int SC_RESET_CONTENT = 205;
+    int SC_PARTIAL_CONTENT = 206;
+    int SC_MULTIPLE_CHOICES = 300;
+    int SC_MOVED_PERMANENTLY = 301;
+    int SC_MOVED_TEMPORARILY = 302;
+    int SC_FOUND = 302;
+    int SC_SEE_OTHER = 303;
+    int SC_NOT_MODIFIED = 304;
+    int SC_USE_PROXY = 305;
+    int SC_TEMPORARY_REDIRECT = 307;
+    int SC_BAD_REQUEST = 400;
+    int SC_UNAUTHORIZED = 401;
+    int SC_PAYMENT_REQUIRED = 402;
+    int SC_FORBIDDEN = 403;
+    int SC_NOT_FOUND = 404;
+    int SC_METHOD_NOT_ALLOWED = 405;
+    int SC_NOT_ACCEPTABLE = 406;
+    int SC_PROXY_AUTHENTICATION_REQUIRED = 407;
+    int SC_REQUEST_TIMEOUT = 408;
+    int SC_CONFLICT = 409;
+    int SC_GONE = 410;
+    int SC_LENGTH_REQUIRED = 411;
+    int SC_PRECONDITION_FAILED = 412;
+    int SC_REQUEST_ENTITY_TOO_LARGE = 413;
+    int SC_REQUEST_URI_TOO_LONG = 414;
+    int SC_UNSUPPORTED_MEDIA_TYPE = 415;
+    int SC_REQUESTED_RANGE_NOT_SATISFIABLE = 416;
+    int SC_EXPECTATION_FAILED = 417;
+    int SC_INTERNAL_SERVER_ERROR = 500;
+    int SC_NOT_IMPLEMENTED = 501;
+    int SC_BAD_GATEWAY = 502;
+    int SC_SERVICE_UNAVAILABLE = 503;
+    int SC_GATEWAY_TIMEOUT = 504;
+    int SC_HTTP_VERSION_NOT_SUPPORTED = 505;
+```
+
+#### 2、常见应用
+
+1. 向浏览器输出消息（一直在讲，就不说了）
+2. **下载文件**
+   1. 要获取下载文件的路径
+   2. 下载的文件名是啥？
+   3. 设置想办法让浏览器能够支持下载我们需要的东西
+   4. 获取下载文件的输入流
+   5. 创建缓冲区
+   6. 获取OutputSteam对象
+   7. 讲FileOutputStream流写入到buffer缓冲区
+   8. 使用OutputStream讲缓冲区的数据输出到客户端
+
+```java
+public class FileServlet extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//        1. 要获取下载文件的路径
+        String realPath = this.getServletContext().getRealPath("/WEB-INF/classes/高.png");
+        System.out.println("下载文件资源路径：" + realPath);
+//        2. 下载的文件名是啥？
+        String filename = realPath.substring(realPath.lastIndexOf("\\") + 1);
+        System.out.println(filename);
+
+//        3. 设置想办法让浏览器能够支持(Content-Disposition)下载我们需要的东西,
+        resp.setHeader("Content-Disposition","attachment;filename=" + URLEncoder.encode(filename,"UTF-8"));
+//        4. 获取下载文件的输入流
+        FileInputStream fis = new FileInputStream(realPath);
+//        5. 创建缓冲区
+        byte[] buffer = new byte[1024];
+//        6. 获取OutputSteam对象
+        ServletOutputStream out = resp.getOutputStream();
+//        7. 讲FileOutputStream流写入到buffer缓冲区
+//        8. 使用OutputStream讲缓冲区的数据输出到客户端
+        int len = -1;
+        while ((len = fis.read(buffer)) > 0) {
+            out.write(buffer,0,len);
+        }
+
+        fis.close();
+        out.close();
+    }
+}
+```
+
+#### 3、**验证码功能**
+
+验证码怎么来的？
+
+- 前端实现
+- 后端实现，需要用到java的图片类，生产一个图片
+
+```java
+public class ImageServlet extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //如何让浏览器5秒自动刷新一次
+        resp.setHeader("refresh","3");
+        //在内存中创建一个图片
+        BufferedImage image = new BufferedImage(80, 20, BufferedImage.TYPE_INT_RGB);
+        //得到图片
+        Graphics2D g = (Graphics2D) image.getGraphics();
+
+        //设置图片的背景颜色
+//        g.setBackground();
+        g.setColor(Color.white);
+        g.fillRect(0,0,80,20);
+
+        //给图片写数据
+        g.setColor(Color.black);
+        g.setFont(new Font(null,Font.BOLD,20));
+        g.drawString(makeNum(),0,20);
+
+        //告诉浏览器，这个请求用图片的方式打开
+        resp.setContentType("image/jpeg");
+        //网站存在缓存，不然浏览器缓存
+        resp.setDateHeader("expires",-1);
+        resp.setHeader("chche-Control","no-cache");
+        resp.setHeader("Prama","no-cache");
+
+        //把图片写给浏览器
+        ImageIO.write(image,"jpg",resp.getOutputStream());
+    }
+
+
+    private String makeNum() {
+        Random random = new Random();
+
+        String num = random.nextInt(9999999) + "";
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0 ; i < 7 - num.length() ; i++) {
+            sb.append(2);
+        }
+        return sb.toString() + num;
+    }
+}
+```
+
+#### 4、实现重定向
+
+![image-20220227154208442](D:\21.04.14\javaweb\readme.assets\image-20220227154208442.png)
+
+一个web资源收到客户端A请求后，B他会通知客户端A去访问另外一个web资源C，这就是重定向。
+
+常见场景：
+
+- 用户登录
+
+ ```java
+     void sendRedirect(String var1) throws IOException;
+ ```
+
+```java
+public class RedirectServlet extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//        resp.setHeader("Location","/img");
+//        resp.setStatus(302);
+        resp.sendRedirect("/img");
+    }
+}
+```
+
+
+
+![image-20220227155537831](D:\21.04.14\javaweb\readme.assets\image-20220227155537831.png)
+
+面试题：请你聊聊重定向和转发的区别？
+
+相同点：
+
+- 页面都会实现跳转
+
+不同点：
+
+- 请求转发的时候，url不会产生变化
+- 重定向，url地址栏会发生变化；
+
+### 6.7 HttpServletRequest
+
