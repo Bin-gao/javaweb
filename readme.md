@@ -386,7 +386,7 @@ Maven会规定号你该如何去编写我们的java代码，必须按照这个�
 
 官网：https://maven.apache.org/
 
-![image-20220225171229485](readme.assets/image-20220225171229485.png)
+![image-20220225171229485](./readme.assets/image-20220225171229485.png)
 
 下载完成后，解压即可；
 
@@ -435,15 +435,15 @@ Maven会规定号你该如何去编写我们的java代码，必须按照这个�
 
 ​	2. 创建一个Maven项目
 
-​	![image-20220225175223708](readme.assets/image-20220225175223708.png)
+​	![image-20220225175223708](./readme.assets/image-20220225175223708.png)
 
 ![image-20220225175405399](readme.assets/image-20220225175405399.png)
 
 3.等待项目初始化完毕
 
-![image-20220225223407791](D:\21.04.14\javaweb\readme.assets\image-20220225223407791.png)
+![image-20220225223407791](.\readme.assets\image-20220225223407791.png)
 
-![image-20220225223423064](D:\21.04.14\javaweb\readme.assets\image-20220225223423064.png)
+![image-20220225223423064](.\readme.assets\image-20220225223423064.png)
 
 4. 观察Maven仓库多了什么东西？
 
@@ -451,9 +451,9 @@ Maven会规定号你该如何去编写我们的java代码，必须按照这个�
 
 idea项目创建成功后，看一眼Maven的配置
 
-![image-20220225223740617](D:\21.04.14\javaweb\readme.assets\image-20220225223740617.png)
+![image-20220225223740617](.\readme.assets\image-20220225223740617.png)
 
-![image-20220225223952297](D:\21.04.14\javaweb\readme.assets\image-20220225223952297.png)
+![image-20220225223952297](.\readme.assets\image-20220225223952297.png)
 
 6. 到这里，Maven在idea中的配置和使用就完成了。
 
@@ -461,11 +461,11 @@ idea项目创建成功后，看一眼Maven的配置
 
 
 
-![image-20220225224236770](D:\21.04.14\javaweb\readme.assets\image-20220225224236770.png)
+![image-20220225224236770](.\readme.assets\image-20220225224236770.png)
 
-<img src="D:\21.04.14\javaweb\readme.assets\image-20220225224447653.png" alt="image-20220225224447653" style="zoom:200%;" />
+<img src=".\readme.assets\image-20220225224447653.png" alt="image-20220225224447653" style="zoom:200%;" />
 
-![image-20220225224556554](D:\21.04.14\javaweb\readme.assets\image-20220225224556554.png)
+![image-20220225224556554](.\readme.assets\image-20220225224556554.png)
 
 这个只有在web应用下才有。
 
@@ -473,25 +473,25 @@ idea项目创建成功后，看一眼Maven的配置
 
 ​	1 .  
 
-![image-20220225224919960](D:\21.04.14\javaweb\readme.assets\image-20220225224919960.png)
+![image-20220225224919960](.\readme.assets\image-20220225224919960.png)
 
 2. 
 
-![image-20220225225121369](D:\21.04.14\javaweb\readme.assets\image-20220225225121369.png)
+![image-20220225225121369](.\readme.assets\image-20220225225121369.png)
 
-![image-20220225225221629](D:\21.04.14\javaweb\readme.assets\image-20220225225221629.png)
+![image-20220225225221629](.\readme.assets\image-20220225225221629.png)
 
-![image-20220225225257391](D:\21.04.14\javaweb\readme.assets\image-20220225225257391.png)
+![image-20220225225257391](.\readme.assets\image-20220225225257391.png)
 
 ### 5.9 在idea中配置Tomcat
 
-![image-20220225225415147](D:\21.04.14\javaweb\readme.assets\image-20220225225415147.png)
+![image-20220225225415147](.\readme.assets\image-20220225225415147.png)
 
-![image-20220225225455894](D:\21.04.14\javaweb\readme.assets\image-20220225225455894.png)
+![image-20220225225455894](.\readme.assets\image-20220225225455894.png)
 
-![image-20220225225538863](D:\21.04.14\javaweb\readme.assets\image-20220225225538863.png)
+![image-20220225225538863](.\readme.assets\image-20220225225538863.png)
 
-![image-20220225225711771](D:\21.04.14\javaweb\readme.assets\image-20220225225711771.png)
+![image-20220225225711771](.\readme.assets\image-20220225225711771.png)
 
 
 
@@ -501,25 +501,25 @@ idea项目创建成功后，看一眼Maven的配置
 
 
 
-![image-20220225225740946](D:\21.04.14\javaweb\readme.assets\image-20220225225740946.png)
+![image-20220225225740946](.\readme.assets\image-20220225225740946.png)
 
 
 
-![image-20220225230051964](D:\21.04.14\javaweb\readme.assets\image-20220225230051964.png)
+![image-20220225230051964](.\readme.assets\image-20220225230051964.png)
 
-![image-20220225230109911](D:\21.04.14\javaweb\readme.assets\image-20220225230109911.png)
+![image-20220225230109911](.\readme.assets\image-20220225230109911.png)
 
-![image-20220225230231459](D:\21.04.14\javaweb\readme.assets\image-20220225230231459.png)
+![image-20220225230231459](.\readme.assets\image-20220225230231459.png)
 
 ### 5.10 pom文件
 
 pom.xml 是Maven的核心配置文件
 
-![image-20220225230717351](D:\21.04.14\javaweb\readme.assets\image-20220225230717351.png)
+![image-20220225230717351](.\readme.assets\image-20220225230717351.png)
 
-![image-20220225231328497](D:\21.04.14\javaweb\readme.assets\image-20220225231328497.png)
+![image-20220225231328497](.\readme.assets\image-20220225231328497.png)
 
-![image-20220225231549043](D:\21.04.14\javaweb\readme.assets\image-20220225231549043.png)
+![image-20220225231549043](.\readme.assets\image-20220225231549043.png)
 
 maven由于它的约定大于配置，我们之后可能遇到我们写的配置文件，无法被导出或者生效的问题。
 
@@ -553,9 +553,9 @@ maven由于它的约定大于配置，我们之后可能遇到我们写的配置
 
 ### 5.11 idea操作
 
-![image-20220225232730516](D:\21.04.14\javaweb\readme.assets\image-20220225232730516.png)
+![image-20220225232730516](.\readme.assets\image-20220225232730516.png)
 
-![image-20220225232805427](D:\21.04.14\javaweb\readme.assets\image-20220225232805427.png)
+![image-20220225232805427](.\readme.assets\image-20220225232805427.png)
 
 ### 5.13 解决遇到的问题
 
@@ -563,7 +563,7 @@ maven由于它的约定大于配置，我们之后可能遇到我们写的配置
 
    解决方法：降级为3.6.1
 
-   ![image-20220225233016172](D:\21.04.14\javaweb\readme.assets\image-20220225233016172.png)
+   ![image-20220225233016172](.\readme.assets\image-20220225233016172.png)
 
 2. Tomcat闪退
 
@@ -573,15 +573,15 @@ maven由于它的约定大于配置，我们之后可能遇到我们写的配置
 
    在idea中的全局默认配置中去配置
 
-   ![image-20220225234422638](D:\21.04.14\javaweb\readme.assets\image-20220225234422638.png)
+   ![image-20220225234422638](.\readme.assets\image-20220225234422638.png)
 
-   ![image-20220225234055324](D:\21.04.14\javaweb\readme.assets\image-20220225234055324.png)
+   ![image-20220225234055324](.\readme.assets\image-20220225234055324.png)
 
 4. Maven项目中Tomcat无法配置
 
 5. maven默认web项目中的web.xml版本问题
 
-   ![image-20220225234824555](D:\21.04.14\javaweb\readme.assets\image-20220225234824555.png)
+   ![image-20220225234824555](.\readme.assets\image-20220225234824555.png)
 
 6. 提花你为webapps4.0版本和tomat一致
 
@@ -589,13 +589,13 @@ maven由于它的约定大于配置，我们之后可能遇到我们写的配置
 
    地址：https://mvnrepository.com/
 
-   ![image-20220225235645390](D:\21.04.14\javaweb\readme.assets\image-20220225235645390.png)
+   ![image-20220225235645390](.\readme.assets\image-20220225235645390.png)
 
-![image-20220225235850108](D:\21.04.14\javaweb\readme.assets\image-20220225235850108.png)
+![image-20220225235850108](.\readme.assets\image-20220225235850108.png)
 
-![image-20220226000039631](D:\21.04.14\javaweb\readme.assets\image-20220226000039631.png)
+![image-20220226000039631](.\readme.assets\image-20220226000039631.png)
 
-![image-20220226000043214](D:\21.04.14\javaweb\readme.assets\image-20220226000043214.png)
+![image-20220226000043214](.\readme.assets\image-20220226000043214.png)
 
 ## 6、Servlet
 
@@ -649,7 +649,7 @@ Servlet接口在Sun公司有两个默认的实现类：HttpServlet，
 
    1. 编写一个普通类
    2. 实现Servlet接口，这里直接继承HttpServlet
-   3. ![image-20220226200447501](D:\21.04.14\javaweb\readme.assets\image-20220226200447501.png)
+   3. ![image-20220226200447501](.\readme.assets\image-20220226200447501.png)
 
 5. 编写Servlet的映射
 
@@ -680,7 +680,7 @@ Servlet接口在Sun公司有两个默认的实现类：HttpServlet，
 
 Servlet是由Web服务器调用，web服务器在收到浏览器请求后，会：
 
-![image-20220226212457912](D:\21.04.14\javaweb\readme.assets\image-20220226212457912.png)
+![image-20220226212457912](.\readme.assets\image-20220226212457912.png)
 
 ### 6.4 Mapping问题
 
@@ -752,7 +752,7 @@ web容器在启动的时候，它会为每个web程序都创建一个对应的Se
 
 我在这个Servlet中保存的数据，可以在另外一个servlet中拿到；
 
-![image-20220226225908090](D:\21.04.14\javaweb\readme.assets\image-20220226225908090.png)	
+![image-20220226225908090](.\readme.assets\image-20220226225908090.png)	
 
 
 
@@ -825,7 +825,7 @@ public class ServletDemo04 extends HttpServlet {
 }
 ```
 
-![image-20220226231934460](D:\21.04.14\javaweb\readme.assets\image-20220226231934460.png)
+![image-20220226231934460](.\readme.assets\image-20220226231934460.png)
 
 4. **读取资源文件**
 
@@ -1052,7 +1052,7 @@ public class ImageServlet extends HttpServlet {
 
 #### 4、实现重定向
 
-![image-20220227154208442](D:\21.04.14\javaweb\readme.assets\image-20220227154208442.png)
+![image-20220227154208442](.\readme.assets\image-20220227154208442.png)
 
 一个web资源收到客户端A请求后，B他会通知客户端A去访问另外一个web资源C，这就是重定向。
 
@@ -1077,7 +1077,7 @@ public class RedirectServlet extends HttpServlet {
 
 
 
-![image-20220227155537831](D:\21.04.14\javaweb\readme.assets\image-20220227155537831.png)
+![image-20220227155537831](.\readme.assets\image-20220227155537831.png)
 
 面试题：请你聊聊重定向和转发的区别？
 
@@ -1092,3 +1092,44 @@ public class RedirectServlet extends HttpServlet {
 
 ### 6.7 HttpServletRequest
 
+HttpServletRequest代表客户端的请求，用户通过Http协议访问服务器，Http请求中的所有信息会被封装到HttpServletRequest，通过这个HttpServletRequest的方法，获得客户端的所有信息。
+
+![image-20220227162238960](.\readme.assets\image-20220227162238960.png)
+
+#### 获取前端传递的参数，请求转发
+
+![image-20220227162546582](.\readme.assets\image-20220227162546582.png)
+
+```java
+public class LoginServlet extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String username = req.getParameter("username");
+        String password = req.getParameter("password");
+        System.out.println(password + " " + username);
+        String[] bobbies = req.getParameterValues("bobbies");
+
+        System.out.println(Arrays.toString(bobbies));
+
+        //通过请求转发
+        //这里的 / 代表当前的web应用
+        req.getRequestDispatcher("/success.jsp").forward(req,resp);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        super.doGet(req, resp);
+    }
+}
+```
+
+**面试题：请你聊聊重定向和转发的区别？**
+
+相同点：
+
+- 页面都会实现跳转
+
+不同点：
+
+- 请求转发的时候，url不会产生变化  307
+- 重定向，url地址栏会发生变化；      302
