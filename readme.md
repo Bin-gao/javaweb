@@ -441,9 +441,9 @@ Maven会规定号你该如何去编写我们的java代码，必须按照这个�
 
 3.等待项目初始化完毕
 
-![image-20220225223407791](.\readme.assets\image-20220225223407791.png)
+![image-20220225223407791](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225223407791.png)
 
-![image-20220225223423064](.\readme.assets\image-20220225223423064.png)
+![image-20220225223423064](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225223423064.png)
 
 4. 观察Maven仓库多了什么东西？
 
@@ -451,9 +451,9 @@ Maven会规定号你该如何去编写我们的java代码，必须按照这个�
 
 idea项目创建成功后，看一眼Maven的配置
 
-![image-20220225223740617](.\readme.assets\image-20220225223740617.png)
+![image-20220225223740617](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225223740617.png)
 
-![image-20220225223952297](.\readme.assets\image-20220225223952297.png)
+![image-20220225223952297](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225223952297.png)
 
 6. 到这里，Maven在idea中的配置和使用就完成了。
 
@@ -461,11 +461,11 @@ idea项目创建成功后，看一眼Maven的配置
 
 
 
-![image-20220225224236770](.\readme.assets\image-20220225224236770.png)
+![image-20220225224236770](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225224236770.png)
 
-<img src=".\readme.assets\image-20220225224447653.png" alt="image-20220225224447653" style="zoom:200%;" />
+<img src="https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225224447653.png" alt="image-20220225224447653" style="zoom:200%;" />
 
-![image-20220225224556554](.\readme.assets\image-20220225224556554.png)
+![image-20220225224556554](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225224556554.png)
 
 这个只有在web应用下才有。
 
@@ -473,25 +473,25 @@ idea项目创建成功后，看一眼Maven的配置
 
 ​	1 .  
 
-![image-20220225224919960](.\readme.assets\image-20220225224919960.png)
+![image-20220225224919960](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225224919960.png)
 
 2. 
 
-![image-20220225225121369](.\readme.assets\image-20220225225121369.png)
+![image-20220225225121369](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225225121369.png)
 
-![image-20220225225221629](.\readme.assets\image-20220225225221629.png)
+![image-20220225225221629](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225225221629.png)
 
-![image-20220225225257391](.\readme.assets\image-20220225225257391.png)
+![image-20220225225257391](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225225257391.png)
 
 ### 5.9 在idea中配置Tomcat
 
-![image-20220225225415147](.\readme.assets\image-20220225225415147.png)
+![image-20220225225415147](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225225415147.png)
 
-![image-20220225225455894](.\readme.assets\image-20220225225455894.png)
+![image-20220225225455894](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225225455894.png)
 
-![image-20220225225538863](.\readme.assets\image-20220225225538863.png)
+![image-20220225225538863](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225225538863.png)
 
-![image-20220225225711771](.\readme.assets\image-20220225225711771.png)
+![image-20220225225711771](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225225711771.png)
 
 
 
@@ -501,25 +501,25 @@ idea项目创建成功后，看一眼Maven的配置
 
 
 
-![image-20220225225740946](.\readme.assets\image-20220225225740946.png)
+![image-20220225225740946](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225225740946.png)
 
 
 
-![image-20220225230051964](.\readme.assets\image-20220225230051964.png)
+![image-20220225230051964](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225230051964.png)
 
-![image-20220225230109911](.\readme.assets\image-20220225230109911.png)
+![image-20220225230109911](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225230109911.png)
 
-![image-20220225230231459](.\readme.assets\image-20220225230231459.png)
+![image-20220225230231459](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225230231459.png)
 
 ### 5.10 pom文件
 
 pom.xml 是Maven的核心配置文件
 
-![image-20220225230717351](.\readme.assets\image-20220225230717351.png)
+![image-20220225230717351](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225230717351.png)
 
-![image-20220225231328497](.\readme.assets\image-20220225231328497.png)
+![image-20220225231328497](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225231328497.png)
 
-![image-20220225231549043](.\readme.assets\image-20220225231549043.png)
+![image-20220225231549043](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225231549043.png)
 
 maven由于它的约定大于配置，我们之后可能遇到我们写的配置文件，无法被导出或者生效的问题。
 
@@ -553,9 +553,9 @@ maven由于它的约定大于配置，我们之后可能遇到我们写的配置
 
 ### 5.11 idea操作
 
-![image-20220225232730516](.\readme.assets\image-20220225232730516.png)
+![image-20220225232730516](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225232730516.png)
 
-![image-20220225232805427](.\readme.assets\image-20220225232805427.png)
+![image-20220225232805427](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225232805427.png)
 
 ### 5.13 解决遇到的问题
 
@@ -563,7 +563,7 @@ maven由于它的约定大于配置，我们之后可能遇到我们写的配置
 
    解决方法：降级为3.6.1
 
-   ![image-20220225233016172](.\readme.assets\image-20220225233016172.png)
+   ![image-20220225233016172](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225233016172.png)
 
 2. Tomcat闪退
 
@@ -573,15 +573,15 @@ maven由于它的约定大于配置，我们之后可能遇到我们写的配置
 
    在idea中的全局默认配置中去配置
 
-   ![image-20220225234422638](.\readme.assets\image-20220225234422638.png)
+   ![image-20220225234422638](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225234422638.png)
 
-   ![image-20220225234055324](.\readme.assets\image-20220225234055324.png)
+   ![image-20220225234055324](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225234055324.png)
 
 4. Maven项目中Tomcat无法配置
 
 5. maven默认web项目中的web.xml版本问题
 
-   ![image-20220225234824555](.\readme.assets\image-20220225234824555.png)
+   ![image-20220225234824555](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225234824555.png)
 
 6. 提花你为webapps4.0版本和tomat一致
 
@@ -589,13 +589,13 @@ maven由于它的约定大于配置，我们之后可能遇到我们写的配置
 
    地址：https://mvnrepository.com/
 
-   ![image-20220225235645390](.\readme.assets\image-20220225235645390.png)
+   ![image-20220225235645390](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225235645390.png)
 
-![image-20220225235850108](.\readme.assets\image-20220225235850108.png)
+![image-20220225235850108](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220225235850108.png)
 
-![image-20220226000039631](.\readme.assets\image-20220226000039631.png)
+![image-20220226000039631](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220226000039631.png)
 
-![image-20220226000043214](.\readme.assets\image-20220226000043214.png)
+![image-20220226000043214](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220226000043214.png)
 
 ## 6、Servlet
 
@@ -649,7 +649,7 @@ Servlet接口在Sun公司有两个默认的实现类：HttpServlet，
 
    1. 编写一个普通类
    2. 实现Servlet接口，这里直接继承HttpServlet
-   3. ![image-20220226200447501](.\readme.assets\image-20220226200447501.png)
+   3. ![image-20220226200447501](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220226200447501.png)
 
 5. 编写Servlet的映射
 
@@ -680,7 +680,7 @@ Servlet接口在Sun公司有两个默认的实现类：HttpServlet，
 
 Servlet是由Web服务器调用，web服务器在收到浏览器请求后，会：
 
-![image-20220226212457912](.\readme.assets\image-20220226212457912.png)
+![image-20220226212457912](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220226212457912.png)
 
 ### 6.4 Mapping问题
 
@@ -752,7 +752,7 @@ web容器在启动的时候，它会为每个web程序都创建一个对应的Se
 
 我在这个Servlet中保存的数据，可以在另外一个servlet中拿到；
 
-![image-20220226225908090](.\readme.assets\image-20220226225908090.png)	
+![image-20220226225908090](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220226225908090.png)	
 
 
 
@@ -825,7 +825,7 @@ public class ServletDemo04 extends HttpServlet {
 }
 ```
 
-![image-20220226231934460](.\readme.assets\image-20220226231934460.png)
+![image-20220226231934460](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220226231934460.png)
 
 4. **读取资源文件**
 
@@ -1052,7 +1052,7 @@ public class ImageServlet extends HttpServlet {
 
 #### 4、实现重定向
 
-![image-20220227154208442](.\readme.assets\image-20220227154208442.png)
+![image-20220227154208442](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220227154208442.png)
 
 一个web资源收到客户端A请求后，B他会通知客户端A去访问另外一个web资源C，这就是重定向。
 
@@ -1077,7 +1077,7 @@ public class RedirectServlet extends HttpServlet {
 
 
 
-![image-20220227155537831](.\readme.assets\image-20220227155537831.png)
+![image-20220227155537831](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220227155537831.png)
 
 面试题：请你聊聊重定向和转发的区别？
 
@@ -1094,11 +1094,11 @@ public class RedirectServlet extends HttpServlet {
 
 HttpServletRequest代表客户端的请求，用户通过Http协议访问服务器，Http请求中的所有信息会被封装到HttpServletRequest，通过这个HttpServletRequest的方法，获得客户端的所有信息。
 
-![image-20220227162238960](.\readme.assets\image-20220227162238960.png)
+![image-20220227162238960](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220227162238960.png)
 
 #### 获取前端传递的参数，请求转发
 
-![image-20220227162546582](.\readme.assets\image-20220227162546582.png)
+![image-20220227162546582](https://cdn.jsdelivr.net/gh/Bin-gao/javaweb/readme.assets/image-20220227162546582.png)
 
 ```java
 public class LoginServlet extends HttpServlet {
@@ -1133,3 +1133,299 @@ public class LoginServlet extends HttpServlet {
 
 - 请求转发的时候，url不会产生变化  307
 - 重定向，url地址栏会发生变化；      302
+
+## 7、Cookie、Session
+
+### 7.1 会话
+
+**会话**：用户打开一个浏览器，点击了很多超连接，访问了多个web资源，关闭了浏览器，这个过程可以称之为会话。
+
+有状态会话：一个同学来过教室，下次再来教室，我们会知道这个同学，曾经来过，称之为有状态会话；
+
+**一个网站，怎么证明你来过？**
+
+1. 服务端给客户端一个信件，客户端下次访问服务端带上信件就可以了；cookie
+2. 服务器登记你来过了，下次你来的时候我来匹配你；session
+
+### 7.2 保存会话的两种技术
+
+#### cookie
+
+- 客户端技术（响应，请求）
+
+#### session
+
+- 服务器技术，利用这个技术，可以保存用户的会话信息，我们可以把信息或者数据放在Session中！
+
+
+
+常见场景：网站登录之后，你下次不用再登录了，第二次直接登上去了。
+
+### 7.3 Cookie
+
+![image-20220227235014447](D:\21.04.14\javaweb\readme.assets\image-20220227235014447.png)
+
+#### 1、从请求中拿到cookie信息 
+
+#### 2、服务器响应给客户端cookie
+
+```java
+Cookie[] cookies = req.getCookies();
+cookie.getName()
+cookie.getValue()
+Cookie cookie = new Cookie("lastLoginTime",System.currentTimeMillis() + "");
+cookie.setMaxAge(24 * 60 * 60);
+resp.addCookie(cookie);
+```
+
+
+
+cookie: 一般会保存在本地中用户目录下 appdata;
+
+#### 3、一个网站cookie是否存在上限？
+
+- 一个Cookie只能保存一个信息；
+- 一个web站点可以给浏览器发送多个cookie，最多存放20个cookie
+- Cookie大小有限制4kb；
+- 300个cookie浏览器上限
+
+#### 4、删除cookie；
+
+- 不设置有效期，关闭浏览器，自动失效；
+- 设置有效时间为0；
+
+#### 5、编码解码
+
+```java
+URLEncoder.encode("秦疆", "utf-8 ")
+URLDecoder.decode(cookie.getvalue() , "UTF-8")
+```
+
+### 
+
+### 7.3 Session(重点)
+
+![image-20220227234057526](D:\21.04.14\javaweb\readme.assets\image-20220227234057526.png)
+
+什么是session？
+
+- 服务器会给每一个用户（创建）一个Session对象；
+- 一个Session独占一个浏览器，只要浏览器没有关，这个Session就存在；
+- 用户登录之后，整个网站它都可以访问；---> 保存用户的信息
+
+
+
+Session和cookie的区别；
+
+- Cookie是吧用户的数据写给用户的浏览器，浏览器保存（可以保存多个）
+- Session把用户的数据写到用户独占Session中，服务器端保存（保存重要的信息，减少服务器资源的浪费）
+- Session对象由服务器对象创建；
+
+
+
+session创建的时候做了什么事情?
+
+```java
+Cookie cookie = new Cookie( "JSESSIONTD" , sessionId);
+resp.addCookie(cookie);
+```
+
+
+
+使用session：
+
+```java
+public class SessionDemo01 extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setCharacterEncoding("utf-8");
+        resp.setCharacterEncoding("utf-8");
+        resp.setContentType("text/html;charset=utf-8");
+
+        HttpSession session = req.getSession();
+
+        session.setAttribute("name","lbgao");
+
+        Person perosn = new Person("lbgao", "18");
+        session.setAttribute("person",perosn);
+
+        String id = session.getId();
+
+        if (session.isNew()) {
+            resp.getWriter().write("session创建成功 :" + id);
+        }else {
+            resp.getWriter().write("已经存在 :" + id);
+        }
+
+/// session创建的时候做了什么事情;
+//  Cookie cookie = new Cookie( "JSESSIONTD" , sessionId);
+//  resp.addCookie(cookie);
+    }
+
+}
+```
+
+```java
+public class SessionDemo02 extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setCharacterEncoding("utf-8");
+        resp.setCharacterEncoding("utf-8");
+        resp.setContentType("text/html;charset=utf-8");
+
+        HttpSession session = req.getSession();
+
+        String name = (String) session.getAttribute("name");
+        Person person = (Person) session.getAttribute("person");
+
+        System.out.println(name);
+        System.out.println(person.toString());
+
+    }
+
+}
+```
+
+```java
+public class SessionDemo03 extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setCharacterEncoding("utf-8");
+        resp.setCharacterEncoding("utf-8");
+        resp.setContentType("text/html;charset=utf-8");
+
+        HttpSession session = req.getSession();
+
+        session.invalidate();
+
+    }
+}
+```
+
+使用场景：
+
+- 保存一个登录用户的信息；
+- 购物车信息；
+- 经常在整个项目中会使用的数据，我们将它保存在Session中；
+
+
+
+会话自动过期：在web.xml配置
+
+```xml
+<session-config>
+<!--15分钟后Session自动失效，以分钟为单位-->
+        <session-timeout>15</session-timeout>
+</session-config>
+```
+
+
+
+![image-20220227234233391](D:\21.04.14\javaweb\readme.assets\image-20220227234233391.png)
+
+## 8、JSP
+
+### 8.1 什么是JSP？
+
+Java Server Pages: java服务端页面，也和Servlet一样，用于动态Web技术
+
+最大特点：
+
+- 写JSP就像在写HTMl
+- 区别
+  - HTML只给用户提供静态的数据
+  - JSP页面中嵌入java代码，为用户提供动态数据；
+
+
+
+### 8.2 JSP原理
+
+思路：jsp到底怎么执行？
+
+- 代码层面没有任何问题
+- 服务器内部工作
+  - tomcat中有一个work目录；
+  - IDEA中使用Tomcat会在IDEA的tomcat中生成一个work目录；
+  - ![image-20220228192343172](D:\21.04.14\javaweb\readme.assets\image-20220228192343172.png)
+
+发现页面转变成了java程序
+
+![image-20220228193015006](D:\21.04.14\javaweb\readme.assets\image-20220228193015006.png)
+
+- **浏览器向服务器发送请求，不管访问什么资源，其实都在访问Servlet！**
+- **JSP最终也会被转换成为一个java类**
+- **JSP本质上久是Servlet**
+
+```java
+//初始化
+public void _jspinit( {
+}
+//销毁
+pub1ic void _jspDestroyo {}
+// JSPService
+public void _jspservice(.HttpServletRequest request,HttpservletResponse response)
+```
+
+#### 1.  判断请求
+
+#### 2. 内置一些对象
+
+```java
+final javax.servlet.jsp.Pagecontext pagecontext;//页面上下文
+javax.servlet.http.Httpsession session = nu11;//session
+final javax.servlet.servletcontext application; //applicatipncontext
+final javax.servlet.serv1etconfig config;//config
+javax.servlet.jsp.jspwriter out = nu1l;// out
+final java.lang.object page = this;//page:当前
+HttpServletRequest request
+HttpServletResponse response 
+```
+
+#### 3.  输出页面前增加的代码
+
+```java
+response. setcontentType("text/html ");//设置响应的页面类型
+pagecontext = _jspxFactory.getpagecontext(this，request，response,null，true ，8192，true);
+_jspx_page_context = pagecontext;
+application = pagecontext.getservletcontext();
+config = pagecontext.getservletconfig();
+session = pagecontext. getsession();
+out = pagecontext.getout();
+_jspx_out = out;
+```
+
+#### 4. 以上的这些个对象我们可以在jsp中直接使用
+
+![image-20220228200431252](D:\21.04.14\javaweb\readme.assets\image-20220228200431252.png)
+
+在JSP页面中;
+
+只要是JAVA代码就会原封不动的输出;
+
+如果是HTML代码，就会被转换为
+
+```java
+out.write("<html>\r\n")
+```
+
+这样的格式输出到前端。
+
+## 9、JavaBean
+
+实体类
+
+JavaBean有特点的写法：
+
+- 必须要有一个无参构造器
+- 属性必须私有化
+- 必须有对应的get/set方法
+
+一般用来和数据库的字段做映射 ORM；
+
+ORM：对象关系映射
+
+- 表 -> 类
+- 字段 -> 属性
+- 行为记录 -> 对象
+
+## 10、MVC
