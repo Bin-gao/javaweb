@@ -1163,7 +1163,7 @@ public class LoginServlet extends HttpServlet {
 
 ### 7.3 Cookie
 
-![image-20220227235014447](readme.assets\image-20220227235014447.png)
+![image-20220227235014447](D:\21.04.14\javaweb\readme.assets\image-20220227235014447-16460604737145.png)
 
 #### 1、从请求中拿到cookie信息 
 
@@ -1429,3 +1429,10 @@ ORM：对象关系映射
 - 行为记录 -> 对象
 
 ## 10、MVC
+
+什么是MVC：Model View  Controller  模型，视图，控制器
+
+### 10.1 早些年
+
+![image-20220228231101422](readme.assets/image-20220228231101422.png)
+
