@@ -1163,7 +1163,7 @@ public class LoginServlet extends HttpServlet {
 
 ### 7.3 Cookie
 
-![image-20220227235014447](D:\21.04.14\javaweb\readme.assets\image-20220227235014447.png)
+![image-20220227235014447](readme.assets\image-20220227235014447.png)
 
 #### 1、从请求中拿到cookie信息 
 
@@ -1205,7 +1205,7 @@ URLDecoder.decode(cookie.getvalue() , "UTF-8")
 
 ### 7.3 Session(重点)
 
-![image-20220227234057526](D:\21.04.14\javaweb\readme.assets\image-20220227234057526.png)
+![image-20220227234057526](readme.assets\image-20220227234057526.png)
 
 什么是session？
 
@@ -1321,7 +1321,7 @@ public class SessionDemo03 extends HttpServlet {
 
 
 
-![image-20220227234233391](D:\21.04.14\javaweb\readme.assets\image-20220227234233391.png)
+![image-20220227234233391](readme.assets\image-20220227234233391.png)
 
 ## 8、JSP
 
@@ -1346,11 +1346,11 @@ Java Server Pages: java服务端页面，也和Servlet一样，用于动态Web�
 - 服务器内部工作
   - tomcat中有一个work目录；
   - IDEA中使用Tomcat会在IDEA的tomcat中生成一个work目录；
-  - ![image-20220228192343172](D:\21.04.14\javaweb\readme.assets\image-20220228192343172.png)
+  - ![image-20220228192343172](readme.assets\image-20220228192343172.png)
 
 发现页面转变成了java程序
 
-![image-20220228193015006](D:\21.04.14\javaweb\readme.assets\image-20220228193015006.png)
+![image-20220228193015006](readme.assets\image-20220228193015006.png)
 
 - **浏览器向服务器发送请求，不管访问什么资源，其实都在访问Servlet！**
 - **JSP最终也会被转换成为一个java类**
@@ -1396,7 +1396,7 @@ _jspx_out = out;
 
 #### 4. 以上的这些个对象我们可以在jsp中直接使用
 
-![image-20220228200431252](D:\21.04.14\javaweb\readme.assets\image-20220228200431252.png)
+![image-20220228200431252](readme.assets\image-20220228200431252.png)
 
 在JSP页面中;
 
