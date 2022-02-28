@@ -1205,7 +1205,7 @@ URLDecoder.decode(cookie.getvalue() , "UTF-8")
 
 ### 7.3 Session(重点)
 
-![image-20220227234057526](readme.assets\image-20220227234057526.png)
+![image-20220227234057526](readme.assets\image-20220227234057526-16460603416211.png)
 
 什么是session？
 
@@ -1321,7 +1321,7 @@ public class SessionDemo03 extends HttpServlet {
 
 
 
-![image-20220227234233391](readme.assets\image-20220227234233391.png)
+![image-20220227234233391](readme.assets\image-20220227234233391-16460603474912.png)
 
 ## 8、JSP
 
@@ -1346,7 +1346,7 @@ Java Server Pages: java服务端页面，也和Servlet一样，用于动态Web�
 - 服务器内部工作
   - tomcat中有一个work目录；
   - IDEA中使用Tomcat会在IDEA的tomcat中生成一个work目录；
-  - ![image-20220228192343172](readme.assets\image-20220228192343172.png)
+  - ![image-20220228192343172](readme.assets\image-20220228192343172-16460603501083.png)
 
 发现页面转变成了java程序
 
@@ -1396,7 +1396,7 @@ _jspx_out = out;
 
 #### 4. 以上的这些个对象我们可以在jsp中直接使用
 
-![image-20220228200431252](readme.assets\image-20220228200431252.png)
+![image-20220228200431252](readme.assets\image-20220228200431252-16460603538834.png)
 
 在JSP页面中;
 
